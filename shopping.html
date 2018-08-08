@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Shopping cart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="C:\Users\Lenovo\Desktop\GMC projet\shopping\shopping.css" />
+    <script src="C:\Users\Lenovo\Desktop\GMC projet\shopping\shopping.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body class="container">
+    <section class="row justify-content-lg-center">
+        <div><img class="img-responsive"src="https://cdn3.vectorstock.com/i/thumb-large/76/32/map-pin-pointer-with-cafe-or-restaurant-sign-icon-vector-17767632.jpg" height="150px" width="150px"></div>
+    </section>
+
+    <section class="row align-items-center border">
+       <div class="col "><img class="img-width" src="http://familypizza92.fr/themes/pizza_1/img/b3.jpg" height="200px" width="200px"></div>
+       <div class="col">
+           <div class="row" ><h1 class="color">Pizza</h1></div>
+           <div class="row"><i>(tomato sauce, mozzarella, tuna, tomato, pepper, onion)</i></div>
+           <div class="row"><h3 class="colorp">15 dt</h3></div>
+       </div>
+       <div class="col">
+           <input type="number" min="1" value="1" id="piznum" >
+       </div>
+       <div class="col">
+           <button class="btn-info" type="button"  id="pizadd" onclick="addp()"><i class="fa fa-cart-plus"></i> Add</button>
+       </div>
+       <div class="col">
+           <button type="button" class="btn-danger" onclick="delp()"><i class="fa fa-times"></i> Cancel</button>
+       </div>
+    </section>
+
+    <section class="row align-items-center border">
+            <div class="col "><img class=" img" src="http://www.cooxo.fr/323-large_default/americain-sandwich-poulet.jpg" height="200px" width="200px"></div>
+            <div class="col ">
+                <div class="row"><h1 class="color">Sandwich</h1></div>
+                <div class="row"><i>(tuna, mayonnaise, lettuce, tomato)</i></div>
+                <div class="row"><h3 class="colorp">3 dt</h3></div>
+            </div>
+            <div class="col">
+                <input type="number" min="1" value="1"  id="sanum">
+            </div>
+            <div class="col">
+                <button type="button" class="btn-info" id="sanad" onclick="adds()"><i class="fa fa-cart-plus"></i> Add</button>
+            </div>
+            <div class="col">
+                <button type="button" class="btn-danger" onclick="dels()"><i class="fa fa-times"></i> Cancel</button>
+            </div>
+    </section>
+
+    <section class="row align-items-center border">
+            <div class="col"><img class="img-width" src="https://pimpmycommunity.files.wordpress.com/2017/05/tacos-480x480.jpg" height="200px" width="200px"></div>
+            <div class="col ">
+                <div class="row" ><h1 class="color">Tacos</h1></div>
+                <div class="row"><i >(cheese sauce, fries, breaded escalope)</i></div>
+                <div class="row"><h3 class="colorp">7 dt</h3></div>
+            </div>
+            <div class="col ">
+                <input type="number" min="1" value="1" id="tanum">
+            </div>
+            <div class="col ">
+                <button type="button" class="btn-info" id="tacad" onclick="addt()"><i class="fa fa-cart-plus"></i> Add</button>
+            </div>
+            <div class="col">
+                <button type="button" class="btn-danger" onclick="del()"><i class="fa fa-times"></i> Cancel</button>
+            </div>
+    </section>
+      
+    <section class="row justify-content-center border">
+                 <button  onclick="som()" class="btn-success"> Total Price </button>
+                <h3 id="msg"> </h3>
+            
+    </section>
+    
+</body>
+</html>
